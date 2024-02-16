@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="text-black max-w-5xl m-auto py-4 flex justify-between items-center">
+    <header className="text-white max-w-5xl m-auto py- flex justify-between items-center">
       <div>
         <h1 className="text-3xl">
           <span className="font-bold">U</span>travel
