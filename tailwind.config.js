@@ -23,6 +23,12 @@ export default {
         subtitle: "#2D3748",
         footerBg: "#C2CFF0",
       },
+      backgroundImage: {
+        homeBg: "url('./src/assets/homeBackground.svg')",
+      },
+      backgroundColor: {
+        footerBg: "#C2CFF0",
+      },
     },
   },
   plugins: [],
