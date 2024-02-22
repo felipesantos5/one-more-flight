@@ -6,7 +6,7 @@ export const Footer = () => {
     });
   };
   return (
-    <footer className="w-full h-32 bg-footerBg text-blue-900 py-4 px-8 relative">
+    < footer className="w-full h-32 bg-footerBg text-blue-900 py-4 px-8 relative">
       <div className="max-w-6xl mx-auto flex justify-between">
         <div className="flex flex-col">
           <span className="font-semibold">Passengers</span>
@@ -28,6 +28,6 @@ export const Footer = () => {
       >
         Go to top ↑
       </button>
-    </footer>
+    </>
   );
 };

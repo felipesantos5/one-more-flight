@@ -1,6 +1,6 @@
 export const Form = () => {
   return (
-    <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/8 bg-white p-8 rounded-lg shadow-lg w-1/2">
+    < div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/8 bg-white p-8 rounded-lg shadow-lg w-1/2">
       <div className="mb-4">
         <div className="text-lg font-semibold">Buy Tickets</div>
         <div className="flex space-x-4 my-2">
@@ -55,6 +55,6 @@ export const Form = () => {
           More details
         </a>
       </div>
-    </div>
+    </>
   );
 };
