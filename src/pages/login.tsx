@@ -20,14 +20,19 @@ export const Login = () => {
             <h2 className="font-bold text-3xl text-title">Login to your account</h2>
           </div>
           <form className="flex flex-col gap-6">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-1">
               <label htmlFor="">E-mail</label>
-              <input type="email" className="border border-gray3 rounded-md p-3 focus:outline-none text-sm" placeholder="example@email.com" required />
+              <input type="email" className="border border-gray3 rounded-md p-3 h-12 focus:outline-none text-sm bg-loginCard" placeholder="example@email.com" required />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-1">
               <label htmlFor="">Password</label>
               <div className="relative flex items-center">
-                <input type={showPassword ? "text" : "password"} className="flex-1 border border-gray3 rounded-md p-3 focus:outline-none text-sm" placeholder="Password" required />
+                <input
+                  type={showPassword ? "text" : "password"}
+                  className={`flex-1 border border-gray3 rounded-md p-3 h-12 focus:outline-none placeholder:text-sm bg-loginCard ${showPassword && "text-sm"}`}
+                  placeholder="Password"
+                  required
+                />
                 <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer">
                   {showPassword ? <EyeOff size="20px" color="#A4A4A4" /> : <Eye size="20px" color="#A4A4A4" />}
                 </button>
@@ -35,8 +40,8 @@ export const Login = () => {
             </div>
             <div className="flex justify-between">
               <div className="flex items-center gap-2">
-                <Checkbox.Root className="shadow-blackA4  flex w-5 h-5 appearance-none items-center justify-center rounded-sm outline-none border border-gray3">
-                  <Checkbox.Indicator className="text-violet-700">
+                <Checkbox.Root className="shadow-blackA4  flex w-5 h-5 appearance-none items-center justify-center rounded-sm border border-gray3">
+                  <Checkbox.Indicator>
                     <CheckIcon />
                   </Checkbox.Indicator>
                 </Checkbox.Root>
